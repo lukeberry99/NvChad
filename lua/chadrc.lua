@@ -33,7 +33,7 @@ M.ui.plugin = {
       hidden = {},
       shown = {},
       -- default, round , slant , block , arrow
-      style = "default",
+      style = "slant",
    },
 }
 
@@ -67,28 +67,28 @@ M.options = {
 
 -- these are plugin related options
 M.options.plugin = {
-   autosave = false, -- autosave on changed text or insert mode leave
+   autosave = true, -- autosave on changed text or insert mode leave
    -- timeout to be used for using escape with a key combination, see mappings.plugin.better_escape
    esc_insertmode_timeout = 300,
 }
 
 -- enable and disable plugins (false for disable)
 M.plugin_status = {
-   autosave = false, -- to autosave files
+   autosave = true, -- to autosave files
    blankline = true, -- beautified blank lines
    bufferline = true, -- buffer shown as tabs
    cheatsheet = true, -- fuzzy search your commands/keymappings
    colorizer = true,
    comment = true, -- universal commentor
-   dashboard = false, -- a nice looking dashboard
+   dashboard = true, -- a nice looking dashboard
    esc_insertmode = true, -- escape from insert mode using custom keys
    feline = true, -- statusline
-   gitsigns = true, -- gitsigns in statusline
+   gitsigns = false, -- gitsigns in statusline
    lspsignature = true, -- lsp enhancements
    neoformat = true, -- universal formatter
    neoscroll = true, -- smooth scroll
    telescope_media = false, -- see media files in telescope picker
-   truezen = false, -- no distraction mode for nvim
+   truezen = true, -- no distraction mode for nvim
    vim_fugitive = false, -- git in nvim
    vim_matchup = true, -- % magic, match it but improved
 }
