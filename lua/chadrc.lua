@@ -5,10 +5,10 @@ M.ui, M.options, M.plugin_status, M.mappings, M.custom = {}, {}, {}, {}, {}
 
 -- non plugin ui configs, available without any plugins
 M.ui = {
-   italic_comments = false,
+   italic_comments = true,
 
    -- theme to be used, to see all available themes, open the theme switcher by <leader> + th
-   theme = "everforest",
+   theme = "onenord",
 
    -- theme toggler, toggle between two themes, see theme_toggleer mappings
    theme_toggler = {
@@ -21,7 +21,7 @@ M.ui = {
 
    -- Enable this only if your terminal has the colorscheme set which nvchad uses
    -- For Ex : if you have onedark set in nvchad , set onedark's bg color on your terminal
-   transparency = false,
+   transparency = true,
 }
 
 -- plugin related ui options
@@ -67,14 +67,14 @@ M.options = {
 
 -- these are plugin related options
 M.options.plugin = {
-   autosave = true, -- autosave on changed text or insert mode leave
+   autosave = false, -- autosave on changed text or insert mode leave
    -- timeout to be used for using escape with a key combination, see mappings.plugin.better_escape
    esc_insertmode_timeout = 300,
 }
 
 -- enable and disable plugins (false for disable)
 M.plugin_status = {
-   autosave = true, -- to autosave files
+   autosave = false, -- to autosave files
    blankline = true, -- beautified blank lines
    bufferline = true, -- buffer shown as tabs
    cheatsheet = true, -- fuzzy search your commands/keymappings
@@ -83,13 +83,13 @@ M.plugin_status = {
    dashboard = true, -- a nice looking dashboard
    esc_insertmode = true, -- escape from insert mode using custom keys
    feline = true, -- statusline
-   gitsigns = false, -- gitsigns in statusline
+   gitsigns = true, -- gitsigns in statusline
    lspsignature = true, -- lsp enhancements
    neoformat = true, -- universal formatter
    neoscroll = true, -- smooth scroll
    telescope_media = false, -- see media files in telescope picker
    truezen = true, -- no distraction mode for nvim
-   vim_fugitive = false, -- git in nvim
+   vim_fugitive = true, -- git in nvim
    vim_matchup = true, -- % magic, match it but improved
 }
 
@@ -179,7 +179,7 @@ M.mappings.plugin = {
       git_status = "<leader>gt",
       help_tags = "<leader>fh",
       live_grep = "<leader>fw",
-      oldfiles = "<leader>fo",
+      browser = "<leader>fo",
       themes = "<leader>th",
    },
    telescope_media = {

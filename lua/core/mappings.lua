@@ -179,6 +179,7 @@ M.telescope = function()
    map("n", m.live_grep, ":Telescope live_grep <CR>")
    map("n", m.oldfiles, ":Telescope oldfiles <CR>")
    map("n", m.themes, ":Telescope themes <CR>")
+   map("n", m.browser, ":Telescope file_browser <CR>")
 end
 
 M.telescope_media = function()
